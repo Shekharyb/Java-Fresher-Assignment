@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	background-color: #f4f6f9;
+	color: #2d3748;
+}
+
+.app-header {
+	background-color: #2c3e50;
+	color: #ffffff;
+	padding: 18px 32px;
+}
+
+.app-header h1 {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.app-header p {
+	margin: 4px 0 0;
+	font-size: 13px;
+	color: #b8c2cc;
+}
+
+.tabs {
+	display: flex;
+	gap: 4px;
+	background-color: #34495e;
+	padding: 0 24px;
+}
+
+.tabs a {
+	display: inline-block;
+	padding: 14px 20px;
+	color: #cbd5e0;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	border-bottom: 3px solid transparent;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tabs a:hover {
+	background-color: #3d566e;
+	color: #ffffff;
+}
+
+.tabs a.active {
+	color: #ffffff;
+	background-color: #f4f6f9;
+	color: #2c3e50;
+	border-bottom-color: #3498db;
+}
+
+.content {
+	padding: 28px 32px;
+}
+
+.content h2 {
+	margin-top: 0;
+	font-size: 18px;
+	color: #2c3e50;
+}
+
+table.data-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+table.data-table th,
+table.data-table td {
+	text-align: left;
+	padding: 12px 16px;
+	border-bottom: 1px solid #e2e8f0;
+	font-size: 14px;
+}
+
+table.data-table th {
+	background-color: #edf2f7;
+	color: #4a5568;
+	font-weight: 600;
+}
+
+table.data-table tr:hover td {
+	background-color: #f7fafc;
+}
+
+/* Read-only quick-reference card used by the Summary tab */
+.summary-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 18px;
+	max-width: 900px;
+}
+
+.summary-card {
+	background-color: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-left: 4px solid #3498db;
+	border-radius: 6px;
+	padding: 18px 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.summary-card .label {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #718096;
+	margin-bottom: 6px;
+}
+
+.summary-card .value {
+	font-size: 20px;
+	font-weight: 600;
+	color: #2d3748;
+}
+
+.summary-card .source {
+	margin-top: 8px;
+	font-size: 11px;
+	color: #a0aec0;
+}
+
+.readonly-note {
+	margin: 0 0 18px;
+	font-size: 13px;
+	color: #718096;
+	font-style: italic;
+}
